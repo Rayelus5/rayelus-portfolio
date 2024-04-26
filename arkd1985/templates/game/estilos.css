@@ -1,0 +1,40 @@
+body {
+    width: 600px;
+    margin: 0 auto;
+    background: black;
+}
+h1 {
+	color: white;
+	font-family: sans-serif;
+    text-align: center;
+}
+#miCanvas {
+    border: groove 2px red;
+    background: black;
+    box-shadow: 10px 10px 10px red;
+}
+.title {
+    color: #fff;
+    text-shadow: 0px 0px 10px red;
+}
+
+#know-button {
+  margin-top: 20px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  transition: color 1s, box-shadow 1s, background-color 0.5s;
+  
+}
+
+
+#know-button:hover {
+
+  background-color: rgba(0,0,0,0.75);
+  color: red;
+  box-shadow: 0 0 100px rgba(100,0,0,1);
+}

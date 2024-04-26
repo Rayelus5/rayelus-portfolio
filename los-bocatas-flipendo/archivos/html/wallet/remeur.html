@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Los Bocatas Flipendo - Wallet</title>
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+<body class="gracias_body">
+
+  <a href="../../../wallet.html"><img class="logo" width="200" src="../../img/logo.png"></a>
+<div class="gracias_texto">
+	<h1 style="font-size: 50px;" class="rojo">Retirar EUR</h1>
+
+<form action="../../php/remeur.php" method="post">
+	<h3 style="font-size: 20px;">Cantidad (EURO)</h3>
+	<input name="cantidadeuro" style="font-size: 30px;" id="cantidadeuro" type="text" name="" placeholder="EURO" maxlength="9" required value="">
+	<h3 style="font-size: 20px;">Número de cuenta</h3>
+	<input name="numbercode" style="font-size: 30px;" id="numbercode" type="text" name="" placeholder="Enter Code" maxlength="9" required value="0x">
+	<input style="font-size: 40px" class="boton_estilo" type="submit" name="" value="Retirar">
+  <p id="message001"></p>
+</form>
+</div>
+
+<div >
+<a href="../../../wallet.html"><button class="boton_volver">Volver</button></a>
+</div>
+
+</body>
+</html>

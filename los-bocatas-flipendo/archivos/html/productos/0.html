@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+	<title>Pedido</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+
+<body>
+
+<h1>Bocata Flipendo</h1>
+<div>
+         
+<p style="text-align: justify;">
+Disfruta de tu bocata flipendo
+<img align="left" title="EN STOCK" width="400"  class="img-responsive" src="../../img/producto1.png" alt="porto4"> 
+</p>
+</div>
+
+
+
+<div class="main-block">
+    <form action="../../php/nuevo-pedido.php" method="post">
+      <fieldset>
+        <legend>
+          <h3>Account Details</h3>
+        </legend>
+        <div  class="account-details">
+          <div><label>Nombre Completo*</label><input style="color:#000;" type="text" id="nombre" name="nombre" maxlength="20" required></div>
+          <div><label>Nº Cuenta*</label><input style="color:#000;" type="text" id="numcuenta" name="numcuenta" maxlength="9" required></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Personalizar pedido</h3>
+        </legend>
+        <div  class="personal-details">
+         
+            
+         <fieldset>
+        <legend>Elige tu salsa*</legend>
+        <label>
+            <input required type="radio" name="salsa" value="BBQ"> BBQ
+        </label>
+        <label>
+            <input required type="radio" name="salsa" value="Ketchup"> Ketchup
+        </label>
+        <label>
+            <input required type="radio" name="salsa" value="Mayonesa"> Mayonesa
+        </label>
+        <label>
+            <input required type="radio" name="salsa" value="Mostaza"> Mostaza
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Salsa extra (+0,10)</legend>
+        <label>
+            <input required type="radio" name="salsaextra" value="No"> No, gracias
+        </label>
+        <label>
+            <input required type="radio" name="salsaextra" value="BBQ"> BBQ
+        </label>
+        <label>
+            <input required type="radio" name="salsaextra" value="Ketchup"> Ketchup
+        </label>
+        <label>
+            <input required type="radio" name="salsaextra" value="Mayonesa"> Mayonesa
+        </label>
+        <label>
+            <input required type="radio" name="salsaextra" value="Mostaza"> Mostaza
+        </label>
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>Queso (+0,10)</legend>
+        <label>
+            <input required type="radio" name="queso" value="No"> No, gracias
+        </label>
+        <label>
+            <input required type="radio" name="queso" value="Sí"> Sí
+        </label>
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>Refresco (+0,60)</legend>
+        <label>
+            <input required type="radio" name="refresco" value="No"> No, gracias
+        </label>
+        <label>
+            <input required type="radio" name="refresco" value="Cocacola"> Cocacola
+        </label>
+        <label>
+            <input required type="radio" name="refresco" value="Fanta"> Fanta
+        </label>
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>
+          <h3>Detalles del pedido</h3>
+        </legend>
+        <div  class="order-details">
+          <div><label>Día*</label><input style="color:#000;" value="Mañana" type="text" id="orderday" name="orderday" maxlength="15" required></div>
+          <label>
+            <input required type="radio" name="pago" value="PagoFisico"> Pago Físico
+        </label>
+        <label>
+            <input required type="radio" name="pago" value="PagoWallet"> Pago Wallet
+        </label>
+          <div><label>Nota </label><input style="color:#000; width: 600px; height: 30px;" type="text" id="notapedido" name="notapedido" maxlength="150"></div>
+        </div>
+      </fieldset>
+
+
+
+<p align="right">Calificación: </p>
+
+<div class="rating">
+  <input value="star-1" id="star-1" type="radio">
+  <label for="star-1">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+  </label>
+  <input value="star-1" id="star-2" type="radio">
+  <label for="star-2">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+  </label>
+  <input value="star-1" id="star-3" type="radio">
+  <label for="star-3">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+  </label>
+  <input value="star-1" id="star-4" type="radio">
+  <label for="star-4">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+  </label>
+  <input value="star-1" id="star-5" type="radio">
+  <label for="star-5">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+  </label>
+</div>
+
+
+     
+      <button class="button" type="submit" href="">Comprar ahora</button>
+      <br>
+      <div class="back1">
+      <a class="back2" href="../../../index.html">Volver</a>
+      </div>
+    </form>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+            if(disclaimer) {
+                disclaimer.remove();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#EC85FF">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <title> Rayelus </title>
+</head>
+
+<body>
+
+<!--FONDO DE NAVUDAD
+
+<div class="background-animation">
+</div>
+
+-->
+
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Rayelus</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--=============== theme and language change button ===============-->
+            <div>
+
+
+                <div class="theme-language-container">
+                    <div style="float: left; overflow: hidden;">
+                        <div class="language-container-theme">
+                            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+                        </div>
+                    </div>
+
+                    <label class="language-container">
+                        <div style="float: left;">
+                            <input class="language-changer" type="checkbox" checked="language-checked">
+                            <div class="language-checkmark"></div>
+                        </div>
+                    </label>
+                </div>
+
+              
+        </div>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hola, soy</span>
+                    <h1 class="home__name">Rayelus</h1>
+
+                    
+                    <h3 class="home__education"><span class="sec-text"></span></h3>
+                    
+                    <script>
+                            const text = document.querySelector(".sec-text");
+                            const textLoad = () => {
+                                setTimeout(() => {
+                                    text.textContent = "Desarrollador Web";
+                                }, 0);
+                                setTimeout(() => {
+                                    text.textContent = "Diseñador Gráfico";
+                                }, 4000);
+                                setTimeout(() => {
+                                    text.textContent = "Desarrollador Fullstack";
+                                }, 8000); 
+                                setTimeout(() => {
+                                    text.textContent = "Desarrollador Blockchain";
+                                }, 12000);
+                                setTimeout(() => {
+                                    text.textContent = "Emprendedor";
+                                }, 16000);
+                            }
+                            textLoad();
+                            setInterval(textLoad, 20000);
+                    </script>
+
+                    
+
+                    <div class="home__button">
+                        <a download="" href="../assets/pdf/MYPDF.pdf" class="button button-CV button--ghost">
+                            Descargar CV
+                        </a>
+
+                        <a href="#about" class="button">Sobre mi</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="../assets/img/perfil.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/rayelus" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/rayelus5" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://x.com/rayelus5" target="_blank" class="home__social-link">
+                        <i class='fa-brands fa-x-twitter'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Desplazar Abajo</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">Mi Introducción</span>
+            <h2 class="section__title">Sobre mi</h2>
+
+            <div class="about__container container grid">
+                <img src="../assets/img/about.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='fa-solid fa-award about__icon'></i>
+                            <h3 class="about__title">Experiencia</h3>
+                            <span class="about__subtitle">+3 Años Trabajando</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='fa-solid fa-suitcase about__icon'></i>
+                            <h3 class="about__title">Completado</h3>
+                            <span class="about__subtitle">+25 Proyectos</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='fa-solid fa-earth-americas about__icon'></i>
+                            <h3 class="about__title">Estado</h3>
+                            <span class="about__subtitle">Disponible <img style="vertical-align: middle; margin-left: auto; margin-right: auto;" width="10px" src="../assets/img/status-online.png" class="fa-beat-fade"></span>
+                            <!--<span class="about__subtitle">No Disponible <img style="vertical-align: middle; margin-left: auto; margin-right: auto;" width="10px" src="../assets/img/status-offline.png" class="fa-beat-fade"></span>-->
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        Desde los 14 años creando nuevos proyectos y aprendiendo nuevas habilidades. Tengo experiencia en mi sector y mis clientes están contentos con el trabajo que hago.
+                    </p>
+
+                    <a href="#contact" class="button about__button-contact">Contáctame</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">Mis Habilidades</span>
+            <h2 class="section__title">Mi Experiencia</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Desarrollo Frontend</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS/SCSS</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Javascript</h3>
+                                    <span class="skills__level">Aprendiendo <img style="vertical-align: middle; margin-left: auto; margin-right: auto;" width="10px" src="../assets/img/status-offline.png" class="fa-beat-fade"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Aprendiendo <img style="vertical-align: middle; margin-left: auto; margin-right: auto;" width="10px" src="../assets/img/status-offline.png" class="fa-beat-fade"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Desarrollo Backend</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Node JS</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Aprendiendo <img style="vertical-align: middle; margin-left: auto; margin-right: auto;" width="10px" src="../assets/img/status-offline.png" class="fa-beat-fade"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Próximamente</h3>
+                                    <span class="skills__level"><img style="vertical-align: middle; margin-left: auto; margin-right: auto;" width="10px" src="../assets/img/status-offline.png" class="fa-beat-fade"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Próximamente</h3>
+                                    <span class="skills__level"><img style="vertical-align: middle; margin-left: auto; margin-right: auto;" width="10px" src="../assets/img/status-offline.png" class="fa-beat-fade"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Próximamente</h3>
+                                    <span class="skills__level"><img style="vertical-align: middle; margin-left: auto; margin-right: auto;" width="10px" src="../assets/img/status-offline.png" class="fa-beat-fade"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Diseño Gráfico</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Photoshop</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Illustrator</h3>
+                                    <span class="skills__level">Aprendiendo <img style="vertical-align: middle; margin-left: auto; margin-right: auto;" width="10px" src="../assets/img/status-offline.png" class="fa-beat-fade"></span>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Edición de Video</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Premier Pro</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">After Effects</h3>
+                                    <span class="skills__level">Básico</span>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Blender</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section">
+            <span class="section__subtitle">Mis servicios</span>
+            <h2 class="section__title">Qué ofrezco</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">Diseño <br> Gráfico</h3>
+
+                        <span class="services__button">
+                            Ver Más <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Diseño Gráfico</h3>
+
+                            <p class="services__modal-description">
+                                Diseño y desarrollo marcas de cualquier tipo de forma creativa y profesional. También ofrezco una amplia gama de servicios dentro de este campo.
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Diseño de marcas para empresas o particulares.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Edición de vídeo e imágenes para creadores.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Logos, banners, mockups, miniaturas.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Mejoro y rediseño su marca.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Trato personalizado y revisiones.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Desarrollo <br> Web</h3>
+
+                    <span class="services__button">
+                        Ver Más <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Desarrollo Web</h3>
+
+                            <p class="services__modal-description">
+                                Desarrollo, administro y diseño sitios web, además de ofrecer servicios de alojamiento seguros y asequibles.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Sitios web para marcas o particulares.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Asesoramiento en gestión y alojamiento.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Un diseño único que se adapte a su marca.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Sitios web seguros contra ataques DDOS.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Diferentes tipos: Esencial, Extra y Profesional.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Consultoría <br> de Proyecto</h3>
+
+                    <span class="services__button">
+                        Ver Más <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Consultoría de Proyecto</h3>
+
+                            <p class="services__modal-description">
+                                En desarrollo.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        ...
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        ...
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        ...
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        ...
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        ...
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">Mi Portfolio</span>
+            <h2 class="section__title">Trabajos Recientes</h2>
+            <div style="display: flex;
+        justify-content: center;
+        align-items: center;">
+                <div class="work__filters">
+                    <span class="work__item active-work" data-filter='all'>Todos</span>
+                    <span class=" work__item" data-filter='.web'>Web</span>
+                    <span class=" work__item" data-filter='.programming'>Programación</span>
+                    <span class=" work__item" data-filter='.design'>Diseño</span>
+                    <span class=" work__item" data-filter='.uxui'>UX/UI</span>
+                    <span class=" work__item" data-filter='.projects'>Proyectos</span>
+                    <span class=" work__item" data-filter='.video'>Video</span>
+                    <span class=" work__item" data-filter='.other'>Otros</span>
+                </div>
+            </div>
+            <div class="work__container container grid">
+                <div class="work__card mix other">
+                    <img src="../assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">ERC Discord</h3>
+
+                    <a href="https://discord.gg/erc" target="_blank" class="work__button">
+                        Ver <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="../assets/img/work2.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">ERC Connect</h3>
+
+                    <a href="https://rayelus.es/ercconnect2/" target="_blank" class="work__button">
+                        Ver <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix design">
+                    <img src="../assets/img/work3.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">ERC Brand Design</h3>
+
+                    <a href="https://www.youtube.com/@ElRinconCrypto" target="_blank" class="work__button">
+                        Ver <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="../assets/img/work4.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Los Bocatas Flipendo Web</h3>
+
+                    <a href="https://rayelus.es/los-bocatas-flipendo/" target="_blank" class="work__button">
+                        Ver <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="../assets/img/work5.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Luck Drop Web</h3>
+
+                    <a href="https://rayelus.es/luckdrop/" target="_blank" class="work__button">
+                        Ver <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="../assets/img/work6.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">ARKD Web</h3>
+
+                    <a href="https://rayelus.es/arkd1985/" target="_blank" class="work__button">
+                        Ver <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix programming">
+                    <img src="../assets/img/work7.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">FastIPScan CMD Tool</h3>
+
+                    <a href="https://github.com/Rayelus5/FastIPScan" target="_blank" class="work__button">
+                        Ver <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="https://i.ibb.co/yQT5Q2h/imagen-2024-04-24-203539817.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Minimalism Web</h3>
+
+                    <a href="https://rayelus.com/minimalism-web" target="_blank" class="work__button">
+                        View <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix video">
+                    <img src="https://i.ibb.co/gtcvs0j/imagen-2024-04-26-210411425.png" alt="" class="work__img">
+
+                    <h3 class="work__title">El Rincón Crypto Intro</h3>
+
+                    <a href="https://youtu.be/9japGcCiXHs" target="_blank" class="work__button">
+                        View <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix video">
+                    <img src="https://i.ibb.co/HnKxr7y/pionex2colab.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Pionex AD for ERC</h3>
+
+                    <a href="https://youtu.be/hniKo1AcSPQ" target="_blank" class="work__button">
+                        View <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!--=============== TESTIMONIALS ===============-->
+        <section class="testimonial section">
+            <span class="section__subtitle">Mis clientes</span>
+            <h2 class="section__title">Testimonios</h2>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="../assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Pablo (ERC CEO)</h3>
+                        <p class="testimonial__description">
+                            Un trabajo realmente bueno, todos los aspectos del proyecto se hicieron bien.
+                            Muy creativo y atento. Me quedé muy impresionado y se lo recomendaría a cualquiera.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="../assets/img/testimonial2.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Usuario 2</h3>
+                        <p class="testimonial__description">
+                            Un trabajo realmente bueno, todos los aspectos del proyecto se hicieron bien.
+                            Muy creativo y atento. Me quedé muy impresionado y se lo recomendaría a cualquiera.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="../assets/img/testimonial3.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Usuario 3</h3>
+                        <p class="testimonial__description">
+                            Un trabajo realmente bueno, todos los aspectos del proyecto se hicieron bien.
+                            Muy creativo y atento. Me quedé muy impresionado y se lo recomendaría a cualquiera.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="../assets/img/testimonial3.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Usuario 4</h3>
+                        <p class="testimonial__description">
+                            Un trabajo realmente bueno, todos los aspectos del proyecto se hicieron bien.
+                            Muy creativo y atento. Me quedé muy impresionado y se lo recomendaría a cualquiera.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="../assets/img/testimonial3.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Usuario 5</h3>
+                        <p class="testimonial__description">
+                            Un trabajo realmente bueno, todos los aspectos del proyecto se hicieron bien.
+                            Muy creativo y atento. Me quedé muy impresionado y se lo recomendaría a cualquiera.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <sapn class="section__subtitle">Póngase en contacto</sapn>
+            <h3 class="section__title">Contáctame</h3>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-info">Hablemos</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='fa-solid fa-envelope contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">rayelus@proton.me</span>
+
+                            <a href="mailto:rayelus@proton.me" target="_blank" class="contact__button">
+                                Escríbeme <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='fa-brands fa-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">+34 640 19 18 39</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=+34640191839&text=Hey there!" target="_blank"
+                                class="contact__button">
+                                Escríbeme <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='fa-brands fa-discord contact__card-icon'></i>
+                            <h3 class="contact__card-title">Discord</h3>
+                            <span class="contact__card-data">rayelus</span>
+
+                            <a href="https://discord.com/users/699293678354825217" target="_blank" class="contact__button">
+                                Escríbeme <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Escribe tu Mensaje</h3>
+
+                    <form action="https://formsubmit.co/7e0ea4f11e5d013609b49e2cad8acb46" method="POST" class="contact__form">
+                        <input type="hidden" name="_subject" value="Nuevo Mensaje [rayelus.com] (ES)">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <div class="contact__form-div">
+                            <label for="name" class="contact__form-tag">Nombre</label>
+                            <input required type="text" name="name" id="name" placeholder="Introducir Nombre" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="email" class="contact__form-tag">Correo electrónico</label>
+                            <input required type="email" name="email" id="email" placeholder="Introducir Email" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="message" class="contact__form-tag">Mensaje</label>
+                            <textarea required name="message" id="message" cols="30" rows="10" placeholder="Escribe tu Mensaje"
+                                class="contact__form-input "></textarea>
+                        </div>
+
+
+                        <button type="submit" class="button">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+
+                </div>
+
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Rayelus</h1>
+            <!--
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+            -->
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="https://discord.com/users/699293678354825217" target="_blank" class="footer__social-link">
+                        <i class='fa-brands fa-discord footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://github.com/rayelus5" target="_blank" class="footer__social-link">
+                        <i class='fa-brands fa-github footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://x.com/rayelus5" target="_blank" class="footer__social-link">
+                        <i class='fa-brands fa-x-twitter footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/rayelus" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                <b>&#169; <span id="current_date"></span> Rayelus. Todos los derechos reservados.</b>
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <script>
+        document.getElementById("current_date").innerHTML = new Date().getFullYear();
+    </script>
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="../assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+
+    <script src="https://kit.fontawesome.com/47b78de0a8.js" crossorigin="anonymous"></script>
+
+    <!--POINTER-->
+    <script src="../assets/js/pointer.js"></script>
+    <!--REMOVEWAT3RMARK-->
+    <script>
+      init_pointer({});
+
+      document.addEventListener("DOMContentLoaded", () => {
+        var disclaimer = document.querySelector(
+          "img[alt='www.000webhost.com']"
+        );
+        if (disclaimer) {
+          disclaimer.remove();
+        }
+      });
+    </script>
+</body>
+
+</html>
