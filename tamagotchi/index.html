@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="main-menu-screen">
+        <div class="menu">
+            <h1 >Kouchi<p style="font-size: 15px;">(v1.0 BETA)</p></h1>
+            <h3>Welcome to Kouchi by ERC Connect</h3>
+            <div class="menu-buttons">
+                <a href="#" id="action-menu-start-game">Start</a>
+                <a href="#" id="action-menu-settings">Settings</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu-screen-settings">
+        <div class="settings">
+            <h2>Settings</h2>
+            <div class="settings-buttons">
+                <h3>Difficulty: <span id="difSet">Normal</span></h3>
+                <a href="#" id="action-settings-difficulty-easy">Easy</a>
+                <a href="#" id="action-settings-difficulty-normal">Normal</a>
+                <a href="#" id="action-settings-difficulty-hard">Hard</a>
+                <br>
+                <h3>Night mode: <span id="nightmode">off</span></h3>
+                <a href="#" id="nightmode-on">On</a>
+                <a href="#" id="nightmode-off">Off</a>
+                <br>
+                <a href="#" id="action-settings-back">Back</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="game-screen">
+        <div class="tamagotchi">
+
+            <div style="background-color: grey; color: white;"  class="hp">
+                <br>
+                <p id="score-bar">Score: <span id="score"></span></p>
+                <p style="font-size: 15px;" id="score-bar">Tokens Earned: <span id="tokens-erc"></span> ERC</p>
+                <br>
+            </div>
+
+            <div style="height: 25px;"></div>
+
+            <div  class="hp">
+                <p>Sleep: <span id="sleep-hp"></span>%</p>
+                <p>Hunger: <span id="hunger-hp"></span>%</p>
+                <p>Play: <span id="play-hp"></span>%</p><br>
+            </div>
+            <div class="hp">
+                <img width="150px" src="assets/img/kouchi.png">
+                <p><span id="name"></span></p>
+                <div style="text-align: left; margin-left: 25%;">
+                    <p style="font-size: 15px;">Type: <span style="background-color: #34449c; color: #fff; padding: 2px;">Common</span></p>
+                    <p style="font-size: 15px;">Boost: <span style="background-color: #9c3497; color: #fff;">x</span><span style="background-color: #9c3497; color: #fff;" id="tokenBoost"></span></p>
+                </div>
+            </div>
+            
+            <div style="height: 25px;"></div>
+            
+            <div style="background-color: grey; color: #fff;">
+                <div style="height: 15px;"></div>
+                <p id="t-body"><span id="effect-left">°˖✧</span><span id="hand-left">◝</span>(<span id="eye-left">＾</span><span id="mouth">▿</span><span id="eye-right">＾</span>)<span id="hand-right">◜</span><span id="effect-right">✧˖°</span></p>
+                <div style="height: 15px;"></div>
+            </div>
+
+              <div class="buttons">
+                <a href="#" id="action-sleep">Sleep</a>
+                <a href="#" id="action-feed">Feed</a>
+                <a href="#" id="action-play">Play</a>
+                <a href="javascript:location.reload()" id="action-play">Volver</a>
+            </div>
+            
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

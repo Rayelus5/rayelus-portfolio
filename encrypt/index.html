@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encrypt MSO+D48/u</title>
+	<link rel="stylesheet" href="./bulma.min.css">
+	<script type="text/javascript" src="script.js"></script>
+	<style>
+		pre {
+			overflow-x: auto;
+			white-space: pre-wrap
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="https://parzibyte.me/blog">
+				<img alt=""
+					src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipground.com%2Fimages%2Fpadlock-clipart-png-14.png&f=1&nofb=1&ipt=1c09814c61632dbff1a6c6eca923d273d8620fd65252639d0196a547b8130e31&ipo=images"
+					style="max-height: 80px" />
+			</a>
+			<button class="navbar-burger is-warning button" aria-label="menu" aria-expanded="false"
+				data-target="navbarBasicExample">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</button>
+		</div>
+		<div class="navbar-menu">
+			<div class="navbar-start">
+				<strong class="navbar-item">Encrypt [MSO+D48/u] v1.0</strong>
+			</div>
+			<div class="navbar-end">
+				<div class="navbar-item">
+					<div class="buttons">
+						<a target="_blank" rel="noreferrer" href="https://rayelus.com"
+							class="button is-primary">
+							<strong>By Rayelus</strong>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", () => {
+			const boton = document.querySelector(".navbar-burger");
+			const menu = document.querySelector(".navbar-menu");
+			boton.onclick = () => {
+				menu.classList.toggle("is-active");
+				boton.classList.toggle("is-active");
+			};
+		});
+	</script>
+	<section class="section">
+		<div class="columns">
+			<div class="column">
+				<h2 class="is-size-2">ENCRYPT</h2>
+				<div class="field">
+					<label class="label">Password</label>
+					<div class="control">
+						<input id="contraseñaEncriptar" class="input" type="password"
+							placeholder="Escribe una clave de encriptación">
+					</div>
+				</div>
+				<div class="field">
+					<label class="label">Información para encriptar</label>
+					<div class="control">
+						<textarea id="informacionEncriptar" class="textarea"
+							placeholder="Frase semilla o palabra"></textarea>
+					</div>
+				</div>
+				<div class="field">
+					<label class="label">App</label>
+					<div class="control">
+						<textarea id="app" class="textarea"
+							placeholder="Aplicación de la wallet"></textarea>
+					</div>
+				</div>
+				<button class="button is-success" id="botonEncriptar">Encriptar</button>
+				<br><br><hr>
+				<div class="field">
+					<label class="label">Resultado</label>
+					<div class="control">
+						<textarea readonly id="resultadoEncriptacion" class="textarea"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<h2 class="is-size-2">DESENCRYPT</h2>
+				<div class="field">
+					<label class="label">Password</label>
+					<div class="control">
+						<input class="input" id="contraseñaDesencriptar" type="password"
+							placeholder="Escribe una clave de encriptación">
+					</div>
+				</div>
+				<div class="field">
+					<label class="label">Información para desencriptar, en base64</label>
+					<div class="control">
+						<textarea style="height: 300px;" class="textarea" id="informacionDesencriptar"
+							placeholder="Resultado de la encriptación anterior"></textarea>
+					</div>
+				</div>
+				<button class="button is-success" id="botonDesencriptar">Desencriptar</button>
+				<br><br><hr>
+				<div class="field">
+					<label class="label">Resultado</label>
+					<div class="control">
+						<textarea readonly id="resultadoDesencriptacion" class="textarea"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p>
+				<strong>Encrypt [MSO+D48/u] v.1.0</strong> crypto wallet | By <a
+					href="https://rayelus.com">Rayelus</a>
+			</p>
+		</div>
+	</footer>
+</body>
+
+</html>
