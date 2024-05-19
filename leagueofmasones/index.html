@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>League Of Masones</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/jpg" href="assets/img/icon.png" />
+
+<style>
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: crosshair;
+}
+
+body {
+
+  background: #000;
+  cursor: crosshair;
+  -webkit-user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+.navbar {
+background-color: #000;
+border-color: #fff;
+font-size: 15px;
+box-shadow: 0 0 50px rgba(24, 116, 255, 0.467);
+}
+
+/*Sobre Nosotros, Tienda, Contactar*/
+.navbar .nav > li > a{
+transition: color 1s;
+color: #fff;
+}
+.navbar .nav > li > a:hover {
+color: rgb(24, 117, 255);
+}
+
+/*ARKD Shop*/
+.navbar .navbar-header > a{
+transition: color 1s;
+color: #fff;
+}
+.navbar .navbar-header > a:hover {
+color: rgb(24, 117, 255);
+}
+
+
+.arcade_img {
+margin: auto;
+display: block;
+}
+
+.logo {
+  margin: auto;
+  padding-top: 10px;
+  display:block;
+}
+
+.gracias_body {
+background: #000;
+}
+
+.gracias_texto {
+font-size: 20px;
+margin: auto;
+padding-top: 50px;
+font-family: sans-serif;
+text-align: center;
+color: #fff;
+}
+
+.boton_volver{
+padding: 10px;
+margin: auto;
+display: block;
+margin-top: 20px;
+background-color: transparent;
+color: white;
+border-color: white;
+border-radius: 30px;
+font-size: 12px;
+font-weight: 700;
+margin-bottom: 150px;
+}
+
+.boton_volver:hover {
+background-color: #000;
+color: rgb(24, 117, 255);
+  box-shadow: 0 0 100px rgb(24, 117, 255);
+}
+
+.boton_estilo{
+padding: 10px;
+margin: auto;
+display: block;
+margin-top: 20px;
+background-color: transparent;
+color: white;
+border-color: white;
+border-radius: 30px;
+font-size: 25px;
+text-decoration:none;
+font-weight: 700;
+margin-bottom: 10px;
+}
+
+.boton_estilo:hover {
+background-color: #000;
+color: rgb(24, 117, 255);
+  box-shadow: 0 0 100px rgb(24, 117, 255);
+}
+
+.video {
+width: 400px;
+margin: auto;
+margin-left: 50px;
+padding: 50px;
+border-radius: 100px;
+}
+
+.logo1 {
+display: block;
+width: 150px;
+margin: auto;
+}
+
+
+#header-cont {
+display: -webkit-flex;
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 1000px;
+color: white;
+}
+
+#video_background1 {
+opacity: 0.4;
+align-content: center;
+position: absolute;
+bottom: 0px;
+right: 0px;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+z-index: -1000;
+overflow: hidden;
+
+}
+
+#know-button {
+margin-top: 20px;
+background-color: transparent;
+color: white;
+border-color: white;
+border-radius: 30px;
+font-size: 17px;
+font-weight: 700;
+width: 300px;
+margin-bottom: 100px;
+transition: color 1s, box-shadow 1s, background-color 0.5s;
+
+}
+
+.rojo {
+color: rgb(24, 117, 255);
+}
+
+#know-button:hover {
+
+background-color: rgba(0,0,0,0.75);
+color: rgb(24, 117, 255);
+box-shadow: 0 0 40px rgba(24, 116, 255, 0.552);
+}
+
+#home-cont, #wallet-cont, #news-cont {
+display: -webkit-flex;
+display: flex;
+flex-direction: column;
+justify-content: center;
+box-shadow: 0 0 100px rgb(24, 117, 255);
+background-color: #000; 
+color: white;
+padding-bottom: 50px;
+}
+
+#home-cont, #wallet-cont, #team {
+margin-top: 30px;
+}
+
+#join-cont {
+text-align: center;
+background-color: #202020; 
+color: white;
+padding-bottom: 20px;
+}
+
+#price-cont {
+text-align: center;
+background-color: #202020; 
+color: white;
+padding-bottom: 20px;
+}
+
+
+
+.typed {
+color: rgb(24, 117, 255);
+}
+
+h5 {
+color: #000;
+font-size: 20px;
+}
+
+#shop-cont {
+background: #101010;
+padding-top: 30px;
+padding-bottom: 50px;
+color: white;
+}
+
+#shop-cont .row {
+margin-top: 30px;
+color: grey;
+}
+
+#shop-cont h3{
+margin-top: 10px;
+margin-bottom: 0px;
+}
+#shop-cont h5{
+margin-top: 2px;
+margin-bottom: 0px;
+}
+
+.box {
+background-color: white;
+border-radius: 2px;
+margin: 20px;
+padding-bottom: 20px;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+transition: all 0.2s ease-in-out;
+}
+
+.box:hover {
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 20px rgb(24, 117, 255);
+}
+
+
+.box2 {
+width: 300px;
+background-color: white;
+border-radius: 2px;
+margin-left: 210px;
+padding-bottom: 20px;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+transition: all 0.2s ease-in-out;
+}
+
+.box2:hover {
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 60px rgb(24, 117, 255);
+}
+
+
+#contact-cont {
+box-shadow: 0 0 100px rgba(0,0,0,1);
+color: white;
+padding-top: 10px;
+padding-bottom: 70px;
+background: #202020;
+}
+
+#contact-form {
+padding: 10px;
+padding-bottom: 30px;
+}
+
+#social {
+margin-top: 70px;
+margin-bottom: 30px;
+}
+
+#social h3 {
+margin: 1px 0px 1px 0px;
+}
+
+footer {
+text-align: center;
+margin-top: 25px;
+background-color: #000;
+color: white;
+}
+
+h4 {
+text-align: center;
+}
+
+.correo {
+font-size: 15px;
+}
+
+.typed {
+font-weight: bold;
+}
+
+.typed-cursor{
+color: rgb(24, 117, 255);
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+
+@media screen and (max-width: 900px){
+
+/*Encabezado de búsqueda*/
+.collapse {
+opacity: 0.7;
+margin: auto;
+display: block;
+font-size: 12px;
+}
+
+/*Logo e imagen principal*/
+.logo {
+width: 500px;
+margin-top: 150px;
+}
+
+.arcade_img {
+width: 400px;
+}
+.video {
+margin: auto;
+display: block;
+}
+.row {
+  margin-top: 125px;
+}
+
+#works-title {
+  margin-top: 125px;
+}
+
+/*Productos de la tienda*/
+
+.img-responsive {
+width: 250px;
+margin: auto;
+display: block;
+}
+.box {
+width: 250px;
+  margin: auto;
+display: block;
+margin-bottom: 50px;
+}
+
+}
+</style>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a style="font-weight: bold; font-size: 20px;" class="navbar-brand" href="#">LEAGUE OF MASONES</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+
+
+        <li><a href="#" class="page-scroll">Home</a></li>
+        
+        <li><a href="signup.html" class="page-scroll">Start</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+<div class="container-fluid" id="header-cont">
+  <br><br>
+
+<img title="Los Bocatas Flipendo" class="logo" width="500px" src="assets/img/logo.png">
+
+  <h1 style="text-shadow: 0px 5px 10px #000; text-align: center; font-size: 48px;">Bienvenid@ a <b><span class="typed">League Of Masones</span></b></h1>
+  <br>
+  <a href="signup.html" class="btn btn-default center-block page-scroll" style="text-align: center;" id="know-button">Get Started</a>
+  <video id="video_background1" src="assets/img/video1.mp4" autoplay muted loop></video>
+</div>
+
+
+<!--HOME-->
+
+<div style="height: 120px;"></div>
+
+
+<footer>League Of Masones - 2024-2025 © - Web by <a href="https://rayelus.com">Rayelus</a><br>Copyright - All rigths reserved</footer>
+
+
+<div style="height: 30px;"></div>
+<!-- partial -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script><script  src="assets/js/main.js"></script>
+
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+            if(disclaimer) {
+                disclaimer.remove();
+            }
+        });
+    </script>
+</body>
+</html>
