@@ -763,12 +763,32 @@ body.light-theme {
   padding: 1.25rem 1.5rem;
   border-radius: 1.5rem;
   margin-bottom: 3rem;
+  height: 350px;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.testimonial__users {
+  text-decoration: none;
+  color: #374457;
+  font-size: 18px;
+  font-weight: bold;
+  display:flex;
+  align-items:center;
+}
+
+.container__username {
+  
+  display:flex;
+  flex-direction:column;
+
 }
 
 .testimonial__img {
   width: 60px;
   border-radius: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+  margin-right: 15px;
 }
 
 .testimonial__name {
@@ -780,6 +800,7 @@ body.light-theme {
 .testimonial__description {
   font-size: var(--small-font-size);
   margin-bottom: 0.15rem;
+  text-align: justify;
 }
 
 /* Swiper class */
