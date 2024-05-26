@@ -38,7 +38,7 @@ const init_pointer = (options) => {
 
     const getOption = (option) => {
         let defaultObj = {
-            pointerColor: "#6c87e0",
+            pointerColor: slider.value,
             ringSize: 17,
             ringClickSize: (options["ringSize"] || 15) - 5,
         }

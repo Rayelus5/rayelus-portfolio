@@ -9604,9 +9604,26 @@ h6,
   background-size: cover;
 }
 
+.page-header2 {
+  width: 1200px;
+  height: 850px;
+  background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1)), url(../img/header2.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 991.98px) {
   .page-header {
     height: 300px;
+  }
+  .page-header2 {
+    width: 300px;
+  height: 215px;
+  }
+
+  .header2-text {
+    font-size: 20px;
   }
 }
 

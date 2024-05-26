@@ -244,3 +244,17 @@ function language(){
     location.href="../index.html"
   }
 }
+
+
+
+/*=========COLOR RANGE SLIDER==========*/
+var r = document.querySelector(':root');
+var slider = document.getElementById("colorRange");
+//var output = document.getElementById("color-value");
+
+//output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  //output.innerHTML = this.value;
+  r.style.setProperty('--first-hue', slider.value);
+}
