@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Log In</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/icon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto"><a href="index.html">      <a style="font-weight: bold; font-size: 20px;" class="navbar-brand" href="#"><img src="assets/img/icon.png" width="60px" alt=""></a>
+        </a></h1>
+      
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Inicio</a></li>
+
+            <li class="dropdown">
+              <a href="#"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Diseño Gráfico</span>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="">Miniaturas</a></li>
+                    
+                    <li><a href="">Edición de Vídeo</a></li>
+                    <li><a href="">Imagen de marca</a></li>
+                    
+                    <li><a href="">Logos, Banners...</a></li>
+                    <!--
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                    -->
+                  </ul>
+                </li>
+
+                
+                <li><a href="">Desarrollo Web</a></li>
+                <li><a href="#">Próximamente</a></li>
+                
+              </ul>
+            </li>
+
+
+            <li class="dropdown">
+              <a href="#"><span>Cuenta</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="signup.html">Registrarse</a></li>
+              </ul>
+            </li>
+
+            <li><a class="getstarted" href="signup.html">Empezar</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+
+    
+    <style>
+      * {
+        --principalcolor: #379eff;
+  --secondcolor: #3d1fff61;
+  --colornum3: #1c558a;
+  --colornum4: #211186;
+  --colornum5: #2b3238;
+  --colornum6: #000000;
+      }
+
+
+.cbx {
+ position: relative;
+ top: 1px;
+ width: 27px;
+ height: 27px;
+ border: 1px solid #c8ccd4;
+ border-radius: 3px;
+ vertical-align: middle;
+ transition: background 0.1s ease;
+ cursor: pointer;
+ display: block;
+}
+
+.cbx:after {
+ content: '';
+ position: absolute;
+ top: 2px;
+ left: 8px;
+ width: 7px;
+ height: 14px;
+ opacity: 0;
+ transform: rotate(45deg) scale(0);
+ border-right: 2px solid #fff;
+ border-bottom: 2px solid #fff;
+ transition: all 0.3s ease;
+ transition-delay: 0.15s;
+}
+
+.lbl {
+ margin-left: 5px;
+ vertical-align: middle;
+ cursor: pointer;
+}
+
+#cbx:checked ~ .cbx {
+ border-color: transparent;
+ background: var(--principalcolor);
+ animation: jelly 0.6s ease;
+}
+
+#cbx:checked ~ .cbx:after {
+ opacity: 1;
+ transform: rotate(45deg) scale(1);
+}
+
+.cntr {
+ position: relative;
+}
+
+@keyframes jelly {
+ from {
+  transform: scale(1, 1);
+ }
+
+ 30% {
+  transform: scale(1.25, 0.75);
+ }
+
+ 40% {
+  transform: scale(0.75, 1.25);
+ }
+
+ 50% {
+  transform: scale(1.15, 0.85);
+ }
+
+ 65% {
+  transform: scale(0.95, 1.05);
+ }
+
+ 75% {
+  transform: scale(1.05, 0.95);
+ }
+
+ to {
+  transform: scale(1, 1);
+ }
+}
+
+.hidden-xs-up {
+ display: none!important;
+}
+
+
+      .group {
+        display: flex;
+        justify-content: center;
+        line-height: 30px;
+        align-items: center;
+        position: absolute;
+        max-width: 280px;
+      }
+
+      .input {
+        width: 100%;
+        height: 45px;
+        line-height: 30px;
+        padding: 0 5rem;
+        padding-left: 3rem;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        outline: none;
+        background-color: #f8fafc;
+        color: #0d0c22;
+        transition: 0.5s ease;
+      }
+
+      .input::placeholder {
+        color: #94a3b8;
+      }
+
+      .input:focus,
+      input:hover {
+        outline: none;
+        border-color: var(--principalcolor);
+        background-color: #fff;
+        box-shadow: 0 0 0 5px var(--secondcolor);
+      }
+
+      .icon {
+        position: absolute;
+        left: 1rem;
+        fill: none;
+        width: 1rem;
+        height: 1rem;
+      }
+    </style>
+
+    <main id="main">
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li>Cuenta</li>
+          </ol>
+          <h2>Ez Design - Account Log In Security System</h2>
+        </div>
+      </section>
+
+      <div style="height: 150px"></div>
+      <!-- End Breadcrumbs -->
+
+      <section class="inner-page">
+        <div class="container">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <center>
+                <div>
+                  <h2 style="color: #fff; text-align: center; vertical-align: middle; display: inline-block;">
+                    Inicia sesión de forma segura
+                  </h2><img style="margin-left: 15px;" width="50px" src="assets/img/verify-check.png">
+                </div>
+                </center>
+                <div style="height: 25px"></div>
+
+                <div style="display: flex; justify-content: center">
+                  
+                  <div class="group">
+                    
+                    <input
+                      class="input"
+                      type="text"
+                      id="username"
+                      name="username"
+                      placeholder="Nombre de usuario"
+                      required
+                      minlength="3"
+                      maxlength="21"
+                      
+                    />
+
+                    <div id="errorIcon" style=""></div>
+                  </div>
+                </div>
+
+                <div style="height: 70px"></div>
+
+                <div style="display: flex; justify-content: center">
+                  <div class="group">
+                    <div id="errorIcon" style=""></div>
+                    <svg
+                      id="svgPassIcon"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon"
+                    >
+                      <path
+                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                    
+                    <input
+                      class="input"
+                      type="password"
+                      id="password"
+                      name="password"
+                      placeholder="Contraseña"
+                      required
+                      minlength="3"
+                      maxlength="40"
+
+                    />
+                  </div>
+                  
+                </div>
+
+                <div style="height: 80px"></div>
+
+                <div style="display: flex; justify-content: center">
+                  <div style="margin: 10px">
+                    <a class="btn-get-started2" id="viewPassword"
+                      ><img
+                        id="viewPassBtn"
+                        style="width: 25px"
+                        src="assets/img/eye2.png"
+                    /></a>
+                  </div>
+                  <div style="margin: 10px">
+                    <a class="btn-get-started" onclick="token()">Log In</a>
+                  </div>
+                </div>
+
+                <div style="height: 25px"></div>
+
+                <div style="display: flex; justify-content: center">
+                  <p>
+                    ¿No tienes una cuenta?
+                    <a href="signup.html">Créala ahora</a>
+                  </p>
+                </div>
+
+                <script>
+                  let password = document.getElementById("password");
+                  let username = document.getElementById("username");
+                  let svgPassIcon = document.getElementById("svgPassIcon");
+                  let errorIcon = document.getElementById("errorIcon");
+                  let viewPassword = document.getElementById("viewPassword");
+                  let viewPassBtn = document.getElementById("viewPassBtn");
+                  let prefix = "EZ-";
+                  let sufix = "-DESIGN";
+                  let click = false;
+
+                  viewPassword.addEventListener("click", (e) => {
+                    if (!click) {
+                      password.type = "text";
+                      click = true;
+                      viewPassBtn.setAttribute("src", "assets/img/eye1.png");
+                      viewPassword.setAttribute(
+                        "style",
+                        "background: linear-gradient(to left, var(--colornum6), var(--colornum5)); border: 1px solid #fff;"
+                      );
+                    } else if (click) {
+                      password.type = "password";
+                      click = false;
+                      viewPassBtn.setAttribute("src", "assets/img/eye2.png");
+                      viewPassword.setAttribute(
+                        "style",
+                        "background: linear-gradient(to left, var(--colornum4), var(--colornum3));"
+                      );
+                    }
+                  });
+                  function login() {
+                    window.location =
+                      "account/" + id + "-" + prefix + user + "-" + pass + sufix + "/account.html";
+                  }
+                  function token() {
+                    pass = document.getElementById("password").value;
+                    user = document.getElementById("username").value;
+                    id = -1;
+                    if (user == "admin") {
+                      id = 0;
+                      login();
+                    } if (user == "rayelus") {
+                      id = 1;
+                      login();
+                    } if (user == "erc") {
+                      id = 2;
+                      login();
+                    } if (user == "bot") {
+                      id = 3;
+                      login();
+                    } else {
+                      username.setAttribute(
+                        "style",
+                        "background-color: rgb(223, 54, 54); color: #fff;",
+                      );
+                      username.setAttribute(
+                        "placeholder",
+                        " "
+                      );
+                      errorIcon.setAttribute(
+                        "style",
+                        "width: 25px; height: 20px; display: flex; justify-content: center; margin-left: 10px; box-shadow: 0px 0px 8px rgb(223, 54, 54); color: #fff; background-color: rgb(223, 54, 54); padding: 1px; text-align: center; vertical-align: middle;"
+                      );
+                      document.querySelector("#errorIcon").innerHTML = '<i class="fa-sharp fa-solid fa-xmark"></i>';
+                      /*
+                      svgPassIcon.setAttribute(
+                        "stroke-width",
+                        "0"
+                      );*/
+                    }
+
+                    
+                    
+                    
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div style="height: 500px"></div>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      
+      <!--
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+
+    
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          <div id="current_date">
+            <script>
+                var fecha = new Date()
+                document.getElementById("current_date").innerHTML = "Copyright " + fecha.getFullYear();
+            </script>
+         
+        &copy;
+          <strong><span>League Of Masones, MASONES & LoM</span></strong
+          >. All Rights Reserved
+        </div>
+        
+      </div>
+      <div class="credits">
+        Designed by <a target="_blank" rel="noopener noreferrer" href="https://rayelus.es">Rayelus</a>
+      </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!--CURSOR-->
+    <script src="assets/js/pointer.js"></script>
+    <script>
+      init_pointer({});
+
+      document.addEventListener("DOMContentLoaded", () => {
+        var disclaimer = document.querySelector(
+          "img[alt='www.000webhost.com']"
+        );
+        if (disclaimer) {
+          disclaimer.remove();
+        }
+      });
+    </script>
+    <script src="https://kit.fontawesome.com/47b78de0a8.js" crossorigin="anonymous"></script>
+  </body>
+</html>

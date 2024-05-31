@@ -1,691 +1,450 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <title>Design Services</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="EzDesign - by Rayelus" name="keywords" />
-    <meta content="EzDesign - by Rayelus" name="description" />
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>Design Services</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/jpg" href="assets/img/icon.png" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.png" rel="icon" />
+<style>
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: crosshair;
+}
 
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
-      rel="stylesheet"
-    />
+body {
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  background: #000;
+  cursor: crosshair;
+  -webkit-user-select: none;
+}
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+::-webkit-scrollbar {
+  display: none;
+}
 
-  <body>
-    <!-- Navbar Start -->
-    <div class="container-fluid nav-bar p-0">
-      <div class="container-lg p-0">
-        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-          <a href="index.html" class="navbar-brand">
-            <h1 class="m-0 text-white display-4">
-              <span class="text-primary">E</span>z<span class="text-primary"
-                >D</span
-              >esign
-            </h1>
-            <p style="font-size: 17px; font-style: italic; margin-left: 2px;">By Rayelus</p>
-          </a>
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-between"
-            id="navbarCollapse"
-          >
-            <div class="navbar-nav ml-auto py-0">
-              <a
-                href="https://rayelus.es/el-rincon-crypto"
-                class="nav-item nav-link"
-                >Home</a
-              >
 
-              <a href="pricing.html" class="nav-item nav-link active"
-                >Pricing</a
-              >
-              <div class="nav-item dropdown"></div>
-            </div>
-          </div>
-        </nav>
-      </div>
+
+
+.navbar {
+background-color: #000;
+border-color: #fff;
+font-size: 15px;
+box-shadow: 0 0 50px rgba(24, 116, 255, 0.467);
+}
+
+/*Sobre Nosotros, Tienda, Contactar*/
+.navbar .nav > li > a{
+transition: color 1s;
+color: #fff;
+}
+.navbar .nav > li > a:hover {
+color: rgb(24, 117, 255);
+}
+
+/*ARKD Shop*/
+.navbar .navbar-header > a{
+transition: color 1s;
+color: #fff;
+}
+.navbar .navbar-header > a:hover {
+color: rgb(24, 117, 255);
+}
+
+
+.arcade_img {
+margin: auto;
+display: block;
+}
+
+.logo {
+  margin: auto;
+  padding-top: 10px;
+  display:block;
+}
+
+.gracias_body {
+background: #000;
+}
+
+.gracias_texto {
+font-size: 20px;
+margin: auto;
+padding-top: 50px;
+font-family: sans-serif;
+text-align: center;
+color: #fff;
+}
+
+.boton_volver{
+padding: 10px;
+margin: auto;
+display: block;
+margin-top: 20px;
+background-color: transparent;
+color: white;
+border-color: white;
+border-radius: 30px;
+font-size: 12px;
+font-weight: 700;
+margin-bottom: 150px;
+}
+
+.boton_volver:hover {
+background-color: #000;
+color: rgb(24, 117, 255);
+  box-shadow: 0 0 100px rgb(24, 117, 255);
+}
+
+.boton_estilo{
+padding: 10px;
+margin: auto;
+display: block;
+margin-top: 20px;
+background-color: transparent;
+color: white;
+border-color: white;
+border-radius: 30px;
+font-size: 25px;
+text-decoration:none;
+font-weight: 700;
+margin-bottom: 10px;
+}
+
+.boton_estilo:hover {
+background-color: #000;
+color: rgb(24, 117, 255);
+  box-shadow: 0 0 100px rgb(24, 117, 255);
+}
+
+.video {
+width: 400px;
+margin: auto;
+margin-left: 50px;
+padding: 50px;
+border-radius: 100px;
+}
+
+.logo1 {
+display: block;
+width: 150px;
+margin: auto;
+}
+
+
+#header-cont {
+display: -webkit-flex;
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 1000px;
+color: white;
+}
+
+#video_background1 {
+opacity: 0.8;
+align-content: center;
+position: absolute;
+bottom: 0px;
+right: 0px;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+z-index: -1000;
+overflow: hidden;
+
+}
+
+#know-button {
+margin-top: 20px;
+background-color: transparent;
+color: white;
+border-color: white;
+border-radius: 30px;
+font-size: 20px;
+font-weight: 700;
+width: 300px;
+margin-bottom: 100px;
+transition: color 1s, box-shadow 1s, background-color 0.5s;
+
+}
+
+.rojo {
+color: rgb(24, 117, 255);
+}
+
+#know-button:hover {
+
+background-color: rgba(0,0,0,0.75);
+color: rgb(24, 117, 255);
+box-shadow: 0 0 40px rgba(24, 116, 255, 0.552);
+}
+
+#home-cont, #wallet-cont, #news-cont {
+display: -webkit-flex;
+display: flex;
+flex-direction: column;
+justify-content: center;
+box-shadow: 0 0 100px rgb(24, 117, 255);
+background-color: #000; 
+color: white;
+padding-bottom: 50px;
+}
+
+#home-cont, #wallet-cont, #team {
+margin-top: 30px;
+}
+
+#join-cont {
+text-align: center;
+background-color: #202020; 
+color: white;
+padding-bottom: 20px;
+}
+
+#price-cont {
+text-align: center;
+background-color: #202020; 
+color: white;
+padding-bottom: 20px;
+}
+
+
+
+.typed {
+color: rgb(24, 117, 255);
+}
+
+h5 {
+color: #000;
+font-size: 20px;
+}
+
+#shop-cont {
+background: #101010;
+padding-top: 30px;
+padding-bottom: 50px;
+color: white;
+}
+
+#shop-cont .row {
+margin-top: 30px;
+color: grey;
+}
+
+#shop-cont h3{
+margin-top: 10px;
+margin-bottom: 0px;
+}
+#shop-cont h5{
+margin-top: 2px;
+margin-bottom: 0px;
+}
+
+.box {
+background-color: white;
+border-radius: 2px;
+margin: 20px;
+padding-bottom: 20px;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+transition: all 0.2s ease-in-out;
+}
+
+.box:hover {
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 20px rgb(24, 117, 255);
+}
+
+
+.box2 {
+width: 300px;
+background-color: white;
+border-radius: 2px;
+margin-left: 210px;
+padding-bottom: 20px;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+transition: all 0.2s ease-in-out;
+}
+
+.box2:hover {
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 60px rgb(24, 117, 255);
+}
+
+
+#contact-cont {
+box-shadow: 0 0 100px rgba(0,0,0,1);
+color: white;
+padding-top: 10px;
+padding-bottom: 70px;
+background: #202020;
+}
+
+#contact-form {
+padding: 10px;
+padding-bottom: 30px;
+}
+
+#social {
+margin-top: 70px;
+margin-bottom: 30px;
+}
+
+#social h3 {
+margin: 1px 0px 1px 0px;
+}
+
+footer {
+text-align: center;
+margin-top: 25px;
+background-color: #000;
+color: white;
+}
+
+h4 {
+text-align: center;
+}
+
+.correo {
+font-size: 15px;
+}
+
+.typed {
+font-weight: bold;
+}
+
+.typed-cursor{
+color: rgb(24, 117, 255);
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+
+@media screen and (max-width: 900px){
+
+/*Encabezado de búsqueda*/
+.collapse {
+opacity: 0.7;
+margin: auto;
+display: block;
+font-size: 12px;
+}
+
+/*Logo e imagen principal*/
+.logo {
+width: 500px;
+margin-top: 150px;
+}
+
+.arcade_img {
+width: 400px;
+}
+.video {
+margin: auto;
+display: block;
+}
+.row {
+  margin-top: 125px;
+}
+
+#works-title {
+  margin-top: 125px;
+}
+
+/*Productos de la tienda*/
+
+.img-responsive {
+width: 250px;
+margin: auto;
+display: block;
+}
+.box {
+width: 250px;
+  margin: auto;
+display: block;
+margin-bottom: 50px;
+}
+
+}
+</style>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a style="font-weight: bold; font-size: 20px;" class="navbar-brand" href="#"><img src="assets/img/icon.png" width="60px" alt=""></a>
     </div>
-    <!-- Navbar End -->
+    
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
 
-    <!-- Page Header Start -->
-    <div
-      class="container-fluid page-header d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5 mb-5"
-    >
-      <h1 class="display-4 text-white mb-3 mt-0 mt-lg-5">Rayelus Services</h1>
-      <!--
-        <div class="d-inline-flex text-white">
-        <p class="m-0">
-          <a class="text-white" href="">El Rincón Crypto</a>
-        </p>
-      </div>
-      -->
-    </div>
-    <!-- Page Header Start -->
-    <div>
-      <h1 style="text-align: center;" class="display-3 text-black mb-3 mt-0 mt-lg-5 header2-text">OFERTA ESPECIAL</h1>
-      <div
-        class="container-fluid page-header2 d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5 mb-5"
-      >
+
+        <li><a href="#" class="page-scroll">Inicio</a></li>
         
-        <!--
-          <div class="d-inline-flex text-white">
-          <p class="m-0">
-            <a class="text-white" href="">El Rincón Crypto</a>
-          </p>
-        </div>
-        -->
-      </div>
-    </div>
+        <li><a href="login.html" class="page-scroll">Cuenta</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
 
-    <!-- Pricing Plan Start -->
-    <div class="container-fluid pt-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-6 text-center mb-5">
-            <small
-              class="d-inline bg-primary text-white text-uppercase font-weight-bold px-1"
-              >Our Pricing Plan</small
-            >
-            <h1 class="mt-2 mb-3">
-              Ofrecemos Packs Profesionales y de Calidad
-            </h1>
-            <h4 class="font-weight-normal text-muted mb-4">
-              Prestigio, Originalidad y Profesionalidad
-            </h4>
-            <h5 class="font-weight-bold mb-4">
-              ¿Necesitas un Pack Personalizado?
-            </h5>
-            <a
-              href="https://discordapp.com/users/699293678354825217"
-              class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold"
-              >Contáctanos</a
-            ><br><br>
-          </div>
-        </div>
+<div class="container-fluid" id="header-cont">
+  <br><br>
+<div style="height: 200px;"></div>
+<img title="Ez Design" class="logo" width="900px" src="assets/img/logo.png">
+
+  <h1 style="text-shadow: 0px 5px 10px #000; text-align: center; font-size: 20px;">Bienvenido/a, empieza creándote una cuenta y podrás<br>acceder a nuestros servicios.<b><span class="typed"></span></b></h1>
+  <br>
+  
+  <div style="height: 0px;"></div>
+  <a href="signup.html" class="btn btn-default center-block page-scroll" style="text-align: center;" id="know-button">EMPEZAR</a>
+  <div style="height: 150px;"></div>
+  <video id="video_background1" src="assets/img/video1.mp4" autoplay muted loop></video>
+</div>
 
 
+<!--HOME-->
 
-        <div class="row">
-          <div class="col-md-4 mb-5">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center bg-primary p-4"
-            >
-              <h3>M1 - MINIATURAS PRO PACK</h3>
-              <h1 class="display-4 mb-0">
-                <small
-                  class="align-top"
-                  style="font-size: 22px; line-height: 45px"
-                  >$</small
-                >200
-                <!--
-                <img
-                  width="70px"
-                  style="margin: -15px"
-                  src="https://static.vecteezy.com/system/resources/previews/010/833/561/original/3d-gift-box-free-png.png"
-                />-->
-              </h1>
-              <!--
-              <p
-                style="
-                  font-size: 20px;
-                  line-height: 45px;
-                  text-align: center;
-                  text-decoration: line-through;
-                "
-              >
-                $250
-              </p>
-              -->
-            </div>
-            <div
-              class="border border-top-0 d-flex flex-column align-items-center py-4"
-            >
-              <p>-5 Miniaturas calidad PRO.</p>
-              <p>-Servicio personalizado.</p>
-              <p>-Calidad ULTRA HD.</p>
-              <p>-Revisiones y soporte incluido.</p>
-              <p>-Mejora en un 200% tu engagement<br>en Youtube.</p>
-              <a
-                href="https://discordapp.com/users/699293678354825217"
-                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2"
-                >Comprar</a
-              >
-            </div>
-          </div>
+<div style="height: 120px;"></div>
 
 
-          <div class="col-md-4 mb-5">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center bg-primary p-4"
-            >
-              <h3>M2 - MINIATURAS PRO PACK</h3>
-              <h1 class="display-4 mb-0">
-                <small
-                  class="align-top"
-                  style="font-size: 22px; line-height: 45px"
-                  >$</small
-                >350
-                <!--
-                <img
-                  width="70px"
-                  style="margin: -15px"
-                  src="https://static.vecteezy.com/system/resources/previews/010/833/561/original/3d-gift-box-free-png.png"
-                />-->
-                </h1>
-              
-              <p
-                style="
-                  font-size: 20px;
-                  line-height: 45px;
-                  text-align: center;
-                  text-decoration: line-through;
-                "
-              >
-                $400
-              </p>
-              
-            </div>
-
-            <div
-              class="border border-top-0 d-flex flex-column align-items-center py-4"
-            >
-              <p>-10 Miniaturas calidad PRO.</p>
-              <p>-Servicio personalizado.</p>
-              <p>-Calidad ULTRA HD.</p>
-              <p>-Revisiones y soporte incluido.</p>
-              <p>-Mejora en un 200% tu engagement<br>en Youtube.</p>
-              <a
-                href="https://discordapp.com/users/699293678354825217"
-                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2"
-                >Comprar</a
-              >
-            </div>
-          </div>
+<footer>Ez Design - 2024-2025 © - Web by <a href="https://rayelus.com">Rayelus</a><br>Copyright - All rigths reserved</footer>
 
 
+<div style="height: 30px;"></div>
+<!-- partial -->
 
-          <div class="col-md-4 mb-5">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center bg-primary p-4"
-            >
-              <h3>M3 - MINIATURAS PRO PACK</h3>
-              <h1 class="display-4 mb-0">
-                <small
-                  class="align-top"
-                  style="font-size: 22px; line-height: 45px"
-                  >$</small
-                >450
-                <!--
-                <img
-                  width="70px"
-                  style="margin: -15px"
-                  src="https://static.vecteezy.com/system/resources/previews/010/833/561/original/3d-gift-box-free-png.png"
-                />-->
-                </h1>
-              
-              <p
-                style="
-                  font-size: 20px;
-                  line-height: 45px;
-                  text-align: center;
-                  text-decoration: line-through;
-                "
-              >
-                $600
-              </p>
-              
-            </div>
-            <div
-              class="border border-top-0 d-flex flex-column align-items-center py-4"
-            >
-              <p>-15 Miniaturas calidad PRO.</p>
-              <p>-Servicio personalizado.</p>
-              <p>-Calidad ULTRA HD.</p>
-              <p>-Revisiones y soporte incluido.</p>
-              <p>-Mejora en un 200% tu engagement<br>en Youtube.</p>
-              <a
-                href="https://discordapp.com/users/699293678354825217"
-                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2"
-                >Comprar</a
-              >
-            </div>
-          </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script><script  src="assets/js/main.js"></script>
 
-
-
-          <div class="col-md-4 mb-5">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center bg-primary p-4"
-            >
-              <h3>M4 - MINIATURAS PRO PACK</h3>
-              <h1 class="display-4 mb-0">
-                <small
-                  class="align-top"
-                  style="font-size: 22px; line-height: 45px"
-                  >$</small
-                >600
-                <!--
-                <img
-                  width="70px"
-                  style="margin: -15px"
-                  src="https://static.vecteezy.com/system/resources/previews/010/833/561/original/3d-gift-box-free-png.png"
-                />-->
-                </h1>
-              
-              <p
-                style="
-                  font-size: 20px;
-                  line-height: 45px;
-                  text-align: center;
-                  text-decoration: line-through;
-                "
-              >
-                $800
-              </p>
-              
-            </div>
-            <div
-              class="border border-top-0 d-flex flex-column align-items-center py-4"
-            >
-              <p>-20 Miniaturas calidad PRO.</p>
-              <p>-Servicio personalizado.</p>
-              <p>-Calidad ULTRA HD.</p>
-              <p>-Revisiones y soporte incluido.</p>
-              <p>-Mejora en un 200% tu engagement<br>en Youtube.</p>
-              <a
-                href="https://discordapp.com/users/699293678354825217"
-                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2"
-                >Comprar</a
-              >
-            </div>
-          </div>
-
-
-
-          <div class="col-md-4 mb-5">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center bg-primary p-4"
-            >
-              <h3>V1 - VIDEOS ESSENTIAL / PRO PACK</h3>
-              <h1 class="display-4 mb-0">
-                <small
-                  class="align-top"
-                  style="font-size: 22px; line-height: 45px"
-                  >$</small
-                >150
-                <!--
-                <img
-                  width="70px"
-                  style="margin: -15px"
-                  src="https://static.vecteezy.com/system/resources/previews/010/833/561/original/3d-gift-box-free-png.png"
-                />-->
-              </h1>
-              <!--
-              <p
-                style="
-                  font-size: 20px;
-                  line-height: 45px;
-                  text-align: center;
-                  text-decoration: line-through;
-                "
-              >
-                $250
-              </p>
-              -->
-            </div>
-            <div
-              class="border border-top-0 d-flex flex-column align-items-center py-4"
-            >
-              <p>-1 vídeo calidad ESSENTIAL - PRO.</p>
-              <p>-Duración de 10-25 min.</p>
-              <p>-Servicio personalizado.</p>
-              <p>-Entrega por correo.</p>
-              <p>-Calidad ULTRA HD.</p>
-              <p>-Revisiones y soporte incluido.</p>
-              <p>-Pensado para creadores de YOUTUBE.</p>
-              <p>-Mejora en un 250% tu engagement<br>en Youtube.</p>
-              <a
-                href="https://discordapp.com/users/699293678354825217"
-                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2"
-                >Comprar</a
-              >
-            </div>
-          </div>
-
-
-
-          <div class="col-md-4 mb-5">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center bg-primary p-4"
-            >
-              <h3>V2 - VIDEOS ESSENTIAL / PRO PACK</h3>
-              <h1 class="display-4 mb-0">
-                <small
-                  class="align-top"
-                  style="font-size: 22px; line-height: 45px"
-                  >$</small
-                >400
-                <!--
-                <img
-                  width="70px"
-                  style="margin: -15px"
-                  src="https://static.vecteezy.com/system/resources/previews/010/833/561/original/3d-gift-box-free-png.png"
-                />-->
-              </h1>
-              <p
-                style="
-                  font-size: 20px;
-                  line-height: 45px;
-                  text-align: center;
-                  text-decoration: line-through;
-                "
-              >
-                $450
-              </p>
-            </div>
-            <div
-              class="border border-top-0 d-flex flex-column align-items-center py-4"
-            >
-              <p>-3 vídeo calidad ESSENTIAL - PRO.</p>
-              <p>-Duración de 10-25 min.</p>
-              <p>-Servicio personalizado.</p>
-              <p>-Entrega por correo.</p>
-              <p>-Calidad ULTRA HD.</p>
-              <p>-Revisiones y soporte incluido.</p>
-              <p>-Pensado para creadores de YOUTUBE.</p>
-              <p>-Mejora en un 250% tu engagement<br>en Youtube.</p>
-              <a
-                href="https://discordapp.com/users/699293678354825217"
-                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2"
-                >Comprar</a
-              >
-            </div>
-          </div>
-
-
-          <div class="col-md-4 mb-5">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center bg-primary p-4"
-            >
-              <h3>V3 - VIDEOS ESSENTIAL / PRO PACK</h3>
-              <h1 class="display-4 mb-0">
-                <small
-                  class="align-top"
-                  style="font-size: 22px; line-height: 45px"
-                  >$</small
-                >700
-                <!--
-                <img
-                  width="70px"
-                  style="margin: -15px"
-                  src="https://static.vecteezy.com/system/resources/previews/010/833/561/original/3d-gift-box-free-png.png"
-                />-->
-              </h1>
-              <p
-                style="
-                  font-size: 20px;
-                  line-height: 45px;
-                  text-align: center;
-                  text-decoration: line-through;
-                "
-              >
-                $750
-              </p>
-            </div>
-            <div
-              class="border border-top-0 d-flex flex-column align-items-center py-4"
-            >
-              <p>-5 vídeo calidad ESSENTIAL - PRO.</p>
-              <p>-Duración de 10-25 min.</p>
-              <p>-Servicio personalizado.</p>
-              <p>-Entrega por correo.</p>
-              <p>-Calidad ULTRA HD.</p>
-              <p>-Revisiones y soporte incluido.</p>
-              <p>-Pensado para creadores de YOUTUBE.</p>
-              <p>-Mejora en un 250% tu engagement<br>en Youtube.</p>
-              <a
-                href="https://discordapp.com/users/699293678354825217"
-                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2"
-                >Comprar</a
-              >
-            </div>
-          </div>
-
-
-          <div class="col-md-4 mb-5">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center bg-primary p-4"
-            >
-              <h3>V4 - VIDEOS ESSENTIAL / PRO PACK</h3>
-              <h1 class="display-4 mb-0">
-                <small
-                  class="align-top"
-                  style="font-size: 22px; line-height: 45px"
-                  >$</small
-                >1250
-                <!--
-                <img
-                  width="70px"
-                  style="margin: -15px"
-                  src="https://static.vecteezy.com/system/resources/previews/010/833/561/original/3d-gift-box-free-png.png"
-                />-->
-              </h1>
-              <p
-                style="
-                  font-size: 20px;
-                  line-height: 45px;
-                  text-align: center;
-                  text-decoration: line-through;
-                "
-              >
-                $1500
-              </p>
-            </div>
-            <div
-              class="border border-top-0 d-flex flex-column align-items-center py-4"
-            >
-              <p>-10 vídeo calidad ESSENTIAL - PRO.</p>
-              <p>-Duración de 10-25 min.</p>
-              <p>-Servicio personalizado.</p>
-              <p>-Entrega por correo.</p>
-              <p>-Calidad ULTRA HD.</p>
-              <p>-Revisiones y soporte incluido.</p>
-              <p>-Pensado para creadores de YOUTUBE.</p>
-              <p>-Mejora en un 250% tu engagement<br>en Youtube.</p>
-              <a
-                href="https://discordapp.com/users/699293678354825217"
-                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2"
-                >Comprar</a
-              >
-            </div>
-          </div>
-
-
-          <div class="col-md-4 mb-5">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center bg-primary p-4"
-            >
-              <h3>PÁGINAS WEBS</h3>
-              <h1 class="display-4 mb-0">
-                <small
-                  class="align-top"
-                  style="font-size: 22px; line-height: 45px"
-                  >$</small
-                >3500
-                <!--
-                <img
-                  width="70px"
-                  style="margin: -15px"
-                  src="https://static.vecteezy.com/system/resources/previews/010/833/561/original/3d-gift-box-free-png.png"
-                />-->
-              </h1>
-              <p
-                style="
-                  font-size: 20px;
-                  line-height: 45px;
-                  text-align: center;
-                  text-decoration: line-through;
-                "
-              >
-                $8000
-              </p>
-            </div>
-            <div
-              class="border border-top-0 d-flex flex-column align-items-center py-4"
-            >
-              <p>-1 Página web completa y personalizada.</p>
-              <p>-Dominio web personalizado.</p>
-              <p>-Hosting web durante 3 años + renovación.</p>
-              <p>-Servicio de hosting y actualización<br>web incluido.</p>
-              <p>-Gestión del dominio y seguridad de<br>la web incluida.</p>
-              <p>-Diseño en HTML, CSS, JAVASCRIPT.</p>
-              <p>-Secciones para la web actualizables.</p>
-              <p>-Contenido para la web actualizable.</p>
-              <p>-Mejora en un 500% tu imagen de marca.</p>
-              <a
-                href="https://discordapp.com/users/699293678354825217"
-                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2"
-                >Comprar</a
-              >
-            </div>
-          </div>
-
-
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Pricing Plan End -->
-
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-secondary text-white mt-5 pt-5 px-sm-3 px-md-5"
-    >
-      <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <a href="index.html" class="navbar-brand">
-            <h1 class="m-0 mt-n2 text-white display-4">
-              <span class="text-primary">E</span>z<span class="text-primary"
-                >D</span
-              >esign
-            </h1>
-          </a>
-          <p style="font-size: 14px; text-align: justify">
-            Diseño gráfico de calidad, profesional y accesible para todos. ¿A
-            que esperas para crear tu marca?
-          </p>
-          <img width="300px" src="img/pay.png" />
-          <!--
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-                -->
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <!--
-                <h5 class="font-weight-bold text-primary mb-4">Quick Links</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Services</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Pricing</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Contact Us</a>
-                </div>
-                -->
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <!--
-                <h5 class="font-weight-bold text-primary mb-4">Popular Links</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Services</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Pricing</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Contact Us</a>
-                </div>
-                -->
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h5 class="font-weight-bold text-primary mb-4">Contacto</h5>
-          <p>La comunicación es lo más importante, cuéntanos tus ideas.</p>
-          <!--
-                <p><i class="fa fa-map-marker-alt text-primary mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt text-primary mr-2"></i>+012 345 67890</p>
-                -->
-          <p>
-            <i class="fa fa-envelope text-primary mr-2"></i>rayelus@proton.me
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid py-4 px-sm-3 px-md-5 text-white bg-secondary">
-      <p class="m-0 text-center">
-        &copy; <a class="font-weight-semi-bold" href="#">EzDesign</a>. All
-        Rights Reserved. Designed by
-        <a class="font-weight-semi-bold" href="https://rayelus.es">Rayelus</a>
-      </p>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top"
-      ><i class="fa fa-angle-up"></i
-    ></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        var disclaimer = document.querySelector(
-          "img[alt='www.000webhost.com']"
-        );
-        if (disclaimer) {
-          disclaimer.remove();
-        }
-      });
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+            if(disclaimer) {
+                disclaimer.remove();
+            }
+        });
     </script>
-  </body>
+</body>
 </html>
