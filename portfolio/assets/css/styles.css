@@ -1097,6 +1097,9 @@ body.light-theme {
   .work__filters {
     column-gap: 0.25rem;
   }
+  .gorro_navidad {
+    opacity: 0%;
+  }
 }
 
 @media screen and (min-width: 435px) {
@@ -1107,6 +1110,9 @@ body.light-theme {
 
   .work__img {
     width: 165px;
+  }
+  .gorro_navidad {
+    opacity: 100%;
   }
 }
 
@@ -1194,6 +1200,10 @@ body.light-theme {
 
   .contact__form {
     width: 340px;
+  }
+
+  .gorro_navidad {
+    opacity: 0%;
   }
   /* .contact__info {
     grid-template-columns: 350px;
@@ -1355,6 +1365,9 @@ body.light-theme {
     font-size: 1.25rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
+  }
+  .gorro_navidad {
+    opacity: 100%;
   }
 }
 

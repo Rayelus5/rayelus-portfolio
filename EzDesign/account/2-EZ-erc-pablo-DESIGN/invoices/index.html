@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Services</title>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<style>
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../../../assets/fonts/SF-Pro-Display-Regular.otf') format('truetype');
+}
+
+* {
+    font-family: 'SFProDisplay', sans-serif;
+    font-size: 15px;
+    transition: all .2s ease;
+    margin: 0;
+}
+
+:root {
+    --color1: #0c0d0d;
+    --color2: #444444;
+    --color3: #fff;
+    --color4: #000;
+
+    --color1desactivado: #616161;
+    --color2desactivado: #7d8181;
+}
+html {
+    padding: 40px;
+   
+}
+
+p {
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 870;
+}
+
+.outer {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 1px;
+  background: radial-gradient(circle 230px at 0% 0%, var(--color3), var(--color1));
+  position: relative;
+}
+
+.dot {
+  width: 6px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: var(--color3);
+  box-shadow: 0 0 10px var(--color3);
+  border-radius: 100px;
+  z-index: 2;
+  right: 20%;
+  top: 10%;
+  animation: moveDot 6s linear infinite;
+}
+
+@keyframes moveDot {
+  0%,
+  100% {
+    top: 10%;
+    right: 10%;
+  }
+  25% {
+    top: 10%;
+    right: calc(100% - 45px);
+  }
+  50% {
+    top: calc(100% - 30px);
+    right: calc(100% - 45px);
+  }
+  75% {
+    top: calc(100% - 30px);
+    right: 10%;
+  }
+}
+
+.card {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  border: solid 1px #202222;
+  background-size: 20px 20px;
+  background: radial-gradient(circle 280px at 0% 0%, var(--color2), var(--color1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  color: #fff;
+}
+.ray {
+  width: 250px;
+  height: 45px;
+  border-radius: 100px;
+  position: absolute;
+  background-color: #c7c7c7;
+  opacity: 0.4;
+  box-shadow: 0 0 50px #fff;
+  filter: blur(10px);
+  transform-origin: 10%;
+  top: 0%;
+  left: 0;
+  transform: rotate(40deg);
+}
+
+.card .text {
+  font-weight: 800;
+  font-size: 65px;
+  font-family: 'SFProDisplay', sans-serif;
+  background: linear-gradient(45deg, #000000 1%, #ffd78e, #000);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #2c2c2c;
+}
+.topl {
+  top: 10%;
+  background: linear-gradient(90deg, #888888 30%, #1d1f1f 70%);
+}
+.bottoml {
+  bottom: 10%;
+}
+.leftl {
+  left: 10%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, #747474 30%, #222424 70%);
+}
+.rightl {
+  right: 10%;
+  width: 1px;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 100px 20px;
+  grid-template-columns: auto auto auto;
+  background-color: #ebebeb;
+  border-radius: 25px;
+  padding: 20px;
+  height: 400px;
+}
+
+body { 
+  font-size: 140%; 
+}
+
+h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+table caption {
+	padding: .5em 0;
+}
+
+table.dataTable th,
+table.dataTable td {
+  white-space: nowrap;
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
+}
+
+
+</style>
+
+<body>
+    <center><h1 style="font-weight: 800;">Ez Design - Facturas</h1><p><b>[</b> Facturas y suscripciones de EL RINCÓN CRYPTO <b>]</b></p><br>
+        <a style="font-size: 30px; text-decoration: none; background-color: #000; padding: 10px; border-radius: 30px; color: #ffe100; padding-left: 20px; padding-right: 20px;" href="../account.html">VOLVER</a>
+    </center>
+
+    <div id="miniaturas" style="height: 100px;"></div>
+    <hr>
+    <div id="miniaturas" style="height: 100px;"></div>
+    
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <table summary="This table shows how to create responsive tables using Datatables' extended functionality" class="table table-bordered table-hover dt-responsive">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Descripción / Producto</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Vencimiento</th>
+            <th>Renovación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Producto de prueba</td>
+            <td>06/06/2024</td>
+            <td>06/07/2024</td>
+            <td>SÍ</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5" class="text-center"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+    <div style="height: 200px;"></div>
+    <center>
+        <p>Las condiciones de las facturas pueden variar en cualquier momento</p>
+    </center>
+    
+    <div style="height: 200px;"></div>
+    <script>
+      $('table').DataTable();
+    </script>
+    <script src="https://kit.fontawesome.com/47b78de0a8.js" crossorigin="anonymous"></script>
+</body>
+</html>

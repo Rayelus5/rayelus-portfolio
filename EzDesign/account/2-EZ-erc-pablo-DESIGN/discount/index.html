@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Services</title>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<style>
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../../../assets/fonts/SF-Pro-Display-Regular.otf') format('truetype');
+}
+
+* {
+    font-family: 'SFProDisplay', sans-serif;
+    font-size: 15px;
+    transition: all .2s ease;
+    margin: 0;
+}
+
+:root {
+    --color1: #0c0d0d;
+    --color2: #444444;
+    --color3: #fff;
+    --color4: #000;
+
+    --color1desactivado: #616161;
+    --color2desactivado: #7d8181;
+}
+html {
+    padding: 40px;
+   
+}
+
+p {
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 870;
+}
+
+.outer {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 1px;
+  background: radial-gradient(circle 230px at 0% 0%, var(--color3), var(--color1));
+  position: relative;
+}
+
+.dot {
+  width: 6px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: var(--color3);
+  box-shadow: 0 0 10px var(--color3);
+  border-radius: 100px;
+  z-index: 2;
+  right: 20%;
+  top: 10%;
+  animation: moveDot 6s linear infinite;
+}
+
+@keyframes moveDot {
+  0%,
+  100% {
+    top: 10%;
+    right: 10%;
+  }
+  25% {
+    top: 10%;
+    right: calc(100% - 45px);
+  }
+  50% {
+    top: calc(100% - 30px);
+    right: calc(100% - 45px);
+  }
+  75% {
+    top: calc(100% - 30px);
+    right: 10%;
+  }
+}
+
+.card {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  border: solid 1px #202222;
+  background-size: 20px 20px;
+  background: radial-gradient(circle 280px at 0% 0%, var(--color2), var(--color1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  color: #fff;
+}
+.ray {
+  width: 250px;
+  height: 45px;
+  border-radius: 100px;
+  position: absolute;
+  background-color: #c7c7c7;
+  opacity: 0.4;
+  box-shadow: 0 0 50px #fff;
+  filter: blur(10px);
+  transform-origin: 10%;
+  top: 0%;
+  left: 0;
+  transform: rotate(40deg);
+}
+
+.card .text {
+  font-weight: 800;
+  font-size: 65px;
+  font-family: 'SFProDisplay', sans-serif;
+  background: linear-gradient(45deg, #000000 1%, #ffd78e, #000);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #2c2c2c;
+}
+.topl {
+  top: 10%;
+  background: linear-gradient(90deg, #888888 30%, #1d1f1f 70%);
+}
+.bottoml {
+  bottom: 10%;
+}
+.leftl {
+  left: 10%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, #747474 30%, #222424 70%);
+}
+.rightl {
+  right: 10%;
+  width: 1px;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 100px 20px;
+  grid-template-columns: auto auto auto;
+  background-color: #ebebeb;
+  border-radius: 25px;
+  padding: 20px;
+  height: 400px;
+}
+
+.grid-item {
+
+}
+
+.additional-info {
+  padding: 100px;
+  margin: 100px;
+}
+
+.text-info {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .outer {
+    width: 250px;
+    height: 180px;
+  }
+
+  div {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .text-info {
+    font-size: 14px;
+  }
+
+  .additional-info {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    display: grid;
+    gap: 100px 20px;
+    grid-template-columns: auto auto;
+    background-color: #ebebeb;
+    border-radius: 25px;
+    padding: 20px;
+    height: 500px;
+  }
+  .outer-box {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .grid {
+    display: grid;
+    gap: 100px 20px;
+    grid-template-columns: auto;
+    background-color: #ebebeb;
+    border-radius: 25px;
+    padding: 20px;
+    height: 500px;
+  }
+  .outer-box {
+    margin-top: 30px;
+  }
+}
+
+</style>
+
+<body>
+    <center><h1 style="font-weight: 800;">Ez Design - Descuentos</h1><p><b>[</b> Descuentos exclusivos para EL RINCÓN CRYPTO <b>]</b></p><br>
+        <a style="font-size: 30px; text-decoration: none; background-color: #000; padding: 10px; border-radius: 30px; color: #ffe100; padding-left: 20px; padding-right: 20px;" href="../account.html">VOLVER</a>
+    </center>
+
+    <div id="miniaturas" style="height: 100px;"></div>
+    <hr>
+    <div id="miniaturas" style="height: 100px;"></div>
+    
+
+<center>
+    <h2 style="font-weight: 800; font-size: 34px;">Descuentos disponibles</h2>
+    <span style="font-family: 'Courier New', Courier, monospace; font-size: 20px; font-weight: 600;">(3/3)</span><br><br>
+    <div style="height: 100%; padding-bottom: 150px; padding-top: 60px;" class="grid" style="margin-top: 45px;">
+
+        
+    <div class="outer-box">
+        <div style="box-shadow: 0 0 15px #ffcd44;" class="outer grid-item">
+            <div style="animation: moveDot 3s linear infinite;" class="dot"></div>
+            <div class="card">
+              <div class="ray"></div>
+              <div class="text">$40</div>
+
+              <div>DESCUENTO APLICABLE<br>ACUMULABLE</div>
+
+              <div class="line topl"></div>
+              <div class="line leftl"></div>
+              <div class="line bottoml"></div>
+              <div class="line rightl"></div>
+            </div>
+            <p style="margin-top: 30px; text-align: left; font-style: italic; font-weight: 600; font-size: 18px;">- Por tu última compra de un PACK M3 + 5 miniaturas de $300</p>
+        </div>
+    </div>
+
+    <div class="outer-box">
+        <div style="box-shadow: 0 0 15px #ffcd44;" class="outer grid-item">
+            <div style="animation: moveDot 3s linear infinite;" class="dot"></div>
+            <div class="card">
+              <div class="ray"></div>
+              <div class="text">$5</div>
+
+              <div>DESCUENTO APLICABLE<br>ACUMULABLE</div>
+
+              <div class="line topl"></div>
+              <div class="line leftl"></div>
+              <div class="line bottoml"></div>
+              <div class="line rightl"></div>
+            </div>
+            <p style="margin-top: 30px; text-align: left; font-style: italic; font-weight: 600; font-size: 18px;">- Por contratar el servicio "Intro animated for Youtube"</p>
+        </div>
+    </div>
+
+    <div class="outer-box">
+        <div style="box-shadow: 0 0 15px #ffcd44;" class="outer grid-item">
+            <div style="animation: moveDot 3s linear infinite;" class="dot"></div>
+            <div class="card">
+              <div class="ray"></div>
+              <div class="text">$5</div>
+
+              <div>DESCUENTO APLICABLE<br>ACUMULABLE</div>
+
+              <div class="line topl"></div>
+              <div class="line leftl"></div>
+              <div class="line bottoml"></div>
+              <div class="line rightl"></div>
+            </div>
+            <p style="margin-top: 30px; text-align: left; font-style: italic; font-weight: 600; font-size: 18px;">- Por contratar el servicio "Logo + Banner for Youtube"</p>
+        </div>
+    </div>
+
+        
+          
+    </div>
+</center>
+
+<div style="height: 150px;"></div>
+
+<center>
+    <h2 style="font-weight: 800; font-size: 34px;">Obtener más descuentos</h2>
+    <span style="font-family: 'Courier New', Courier, monospace; font-size: 20px; font-weight: 600;">(5/6)</span><br><br>
+    <div style="height: 100%; padding-bottom: 150px; padding-top: 60px;" class="grid" style="margin-top: 45px;">
+
+        <div class="outer-box" style="opacity: 0.6;">
+            <div class="outer grid-item">
+                <div style="animation: moveDot 13s linear infinite; background-color: #383838;" class="dot"></div>
+                <div style="background: radial-gradient(circle 280px at 0% 0%, var(--color2desactivado), var(--color1desactivado));" class="card">
+                <div class="ray"></div>
+                <div style="color: #838383; text-shadow: 0 0 5px #000000;" class="text">20%</div>
+
+                <div style="color: #9c9c9c; text-shadow: 0 0 4px #000000;">DESCUENTO NO ENCONTRADO</div>
+
+                <div class="line topl"></div>
+                <div class="line leftl"></div>
+                <div class="line bottoml"></div>
+                <div class="line rightl"></div>
+                </div>
+                <p style="margin-top: 30px; text-align: left; font-style: italic; font-weight: 600; font-size: 18px;">[?] Adquiere un pack M4, V3, V4 o superior para desbloquear este descuento.</p>
+            </div>
+            
+        </div>
+
+        <div class="outer-box" style="opacity: 0.6;">
+            <div class="outer grid-item">
+                <div style="animation: moveDot 13s linear infinite; background-color: #383838;" class="dot"></div>
+                <div style="background: radial-gradient(circle 280px at 0% 0%, var(--color2desactivado), var(--color1desactivado));" class="card">
+                <div class="ray"></div>
+                <div style="color: #838383; text-shadow: 0 0 5px #000000;" class="text">$150</div>
+
+                <div style="color: #9c9c9c; text-shadow: 0 0 4px #000000;">DESCUENTO NO ENCONTRADO</div>
+
+                <div class="line topl"></div>
+                <div class="line leftl"></div>
+                <div class="line bottoml"></div>
+                <div class="line rightl"></div>
+                </div>
+                <p style="margin-top: 30px; text-align: left; font-style: italic; font-weight: 600; font-size: 18px;">[?] Adquiere un pack M4, V3, V4 o superior para desbloquear este descuento.</p>
+
+            </div>
+        </div>
+
+        <div class="outer-box" style="opacity: 0.6;">
+            <div class="outer grid-item">
+                <div style="animation: moveDot 13s linear infinite; background-color: #383838;" class="dot"></div>
+                <div style="background: radial-gradient(circle 280px at 0% 0%, var(--color2desactivado), var(--color1desactivado));" class="card">
+                <div class="ray"></div>
+                <div style="color: #838383; text-shadow: 0 0 5px #000000;" class="text">$200</div>
+
+                <div style="color: #9c9c9c; text-shadow: 0 0 4px #000000;">DESCUENTO NO ENCONTRADO</div>
+
+                <div class="line topl"></div>
+                <div class="line leftl"></div>
+                <div class="line bottoml"></div>
+                <div class="line rightl"></div>
+                </div>
+                <p style="margin-top: 30px; text-align: left; font-style: italic; font-weight: 600; font-size: 18px;">[?] Adquiere un pack M4, V3, V4 o superior para desbloquear este descuento.</p>
+
+            </div>
+        </div>
+        
+        <!--####-->
+
+        <div class="outer-box" style="margin-top: 60px; opacity: 0.6;">
+            <div class="outer grid-item">
+                <div style="animation: moveDot 13s linear infinite; background-color: #383838;" class="dot"></div>
+                <div style="background: radial-gradient(circle 280px at 0% 0%, var(--color2desactivado), var(--color1desactivado));" class="card">
+                <div class="ray"></div>
+                <div style="color: #838383; text-shadow: 0 0 5px #000000;" class="text">$350</div>
+
+                <div style="color: #9c9c9c; text-shadow: 0 0 4px #000000;">DESCUENTO NO ENCONTRADO</div>
+
+                <div class="line topl"></div>
+                <div class="line leftl"></div>
+                <div class="line bottoml"></div>
+                <div class="line rightl"></div>
+                </div>
+                <p style="margin-top: 30px; text-align: left; font-style: italic; font-weight: 600; font-size: 18px;">[?] Adquiere un servicio PROFESIONAL de PÁGINAS WEB para desbloquear este descuento.</p>
+
+            </div>
+        </div>
+
+        <div class="outer-box" style="margin-top: 60px; opacity: 0.6;">
+            <div class="outer grid-item">
+                <div style="animation: moveDot 13s linear infinite; background-color: #383838;" class="dot"></div>
+                <div style="background: radial-gradient(circle 280px at 0% 0%, var(--color2desactivado), var(--color1desactivado));" class="card">
+                <div class="ray"></div>
+                <div style="color: #838383; text-shadow: 0 0 5px #000000;" class="text">35%</div>
+
+                <div style="color: #9c9c9c; text-shadow: 0 0 4px #000000;">DESCUENTO NO ENCONTRADO</div>
+
+                <div class="line topl"></div>
+                <div class="line leftl"></div>
+                <div class="line bottoml"></div>
+                <div class="line rightl"></div>
+                </div>
+                <p style="margin-top: 30px; text-align: left; font-style: italic; font-weight: 600; font-size: 18px;">[?] Adquiere un pack M4, V3, V4 o superior para desbloquear este descuento.</p>
+
+            </div>
+        </div>
+
+        <div class="outer-box" style="margin-top: 60px; opacity: 0.6;">
+            <div class="outer grid-item">
+                <div style="animation: moveDot 13s linear infinite; background-color: #383838;" class="dot"></div>
+                <div style="background: radial-gradient(circle 280px at 0% 0%, var(--color2desactivado), var(--color1desactivado));" class="card">
+                <div class="ray"></div>
+                <div style="color: #838383; text-shadow: 0 0 5px #000000;" class="text">???</div>
+
+                <div style="color: #9c9c9c; text-shadow: 0 0 4px #000000;"></div>
+
+                <div class="line topl"></div>
+                <div class="line leftl"></div>
+                <div class="line bottoml"></div>
+                <div class="line rightl"></div>
+                </div>
+                <p style="margin-top: 30px; text-align: left; font-style: italic; font-weight: 600; font-size: 18px;">...</p>
+
+            </div>
+        </div>
+    </div>
+</center>
+<br>
+<div id="miniaturas" style="height: 100px;"></div>
+<hr>
+<div id="miniaturas" style="height: 100px;"></div>
+<center><h1 style="font-weight: 800;">Ez Design - Revisar precios y servicios</h1><br>
+  <a style="font-size: 30px; text-decoration: none; background-color: #000; padding: 10px; border-radius: 30px; color: #ffe100; padding-left: 20px; padding-right: 20px;" href="../prices/">PRECIOS</a>
+</center>
+<div id="miniaturas" style="height: 150px;"></div>
+<hr>
+
+    <div class="additional-info">
+        <h2 style="font-weight: 600;">Información adicional sobre los descuentos en EZ Design</h2><br>
+        <p class="text-info" style="text-align: justify;">No puedes acumular más de $300 o un 45% de descuento en una compra al querer aplicar tus descuentos, si se excede dicha cantidad se te guardarán descuentos adicionales de menos % o menor valor. Los descuentos adicionales se obtienen al contratar servicios de alta calidad, en muestra de agradecimiento para nuestros clientes TOP.</p>
+
+        <br><br><br>
+
+        <h2 style="font-weight: 600;">¿Cómo canjeo mis descuentos disponibles?</h2><br>
+        <p class="text-info" style="text-align: justify;">Simplemente revisa los descuentos que tengas disponibles y contacta a rayelus para cajearlo al realizar alguna compra o contratar algún nuevo servicio.</p>
+
+        <br><br><br>
+
+        <h2 style="font-weight: 600;">¿Cómo obtengo más descuentos?</h2><br>
+        <p class="text-info" style="text-align: justify;">En la sección "Obtener más descuentos" podrás observar que hay una mayor cantidad de descuentos, pero estos no pueden ser aplicables ya que no los has obtenido aún. Para obtenerlos deberás realizar las acciones que vienen debajo de cada descuento, generalmente se trata de contratar nuevos servicios, y a cambio recibirás los descuentos oficiales.<br><br>Recuerda que solo puedes obtener un descuento por la contratación de un solo servicio, y se obtiene en orden de izquierda a derecha y de arriba hacia abajo.</p>
+    </div>
+
+
+    <div style="height: 200px;"></div>
+    <center>
+        <p>Los valores de los descuentos y las condiciones pueden variar en cualquier momento</p>
+    </center>
+    
+    <div style="height: 200px;"></div>
+    <script src="https://kit.fontawesome.com/47b78de0a8.js" crossorigin="anonymous"></script>
+</body>
+</html>
